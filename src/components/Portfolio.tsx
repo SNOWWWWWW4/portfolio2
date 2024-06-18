@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Hero from './Hero';
 import DesktopNavbar from './nav/DesktopNav';
 import MobileNavbar from './nav/MobileNav';
+import About from './About';
 
 
 //bg-[#101034]
@@ -22,7 +23,7 @@ const Portfolio = () => {
         <Hero />
       </section>
       <section>
-        
+        <About />
       </section>
       <Footer />
     </main>
