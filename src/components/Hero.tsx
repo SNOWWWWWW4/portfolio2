@@ -1,11 +1,22 @@
-import { motion } from 'framer-motion';
+import { MotionValue, motion, useTransform } from 'framer-motion';
 import React from 'react';
 import { Highlight } from './ui/hero-highlight';
 import { LampContainer } from './ui/lamp';
+import useWindowSize from '@/hooks/useWindowSize';
 
-const Hero = () => {
+const Hero = ({scrollYProgress} : {scrollYProgress: MotionValue<number>}) => {
+    const { width } = useWindowSize();
+    const isDesktop = width && width >= 767;
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1,0.8])
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, -5])
+
   return (
-    <>
+    <motion.section
+        id='home'
+        className={isDesktop ? 'h-[calc(100vh-68px)] sticky top-0' : 'h-[calc(100dvh-96px)]'}
+        style={{scale, rotate}}
+    >
       <LampContainer>
         <motion.h1
           initial={{
@@ -30,7 +41,7 @@ const Hero = () => {
           clean and elegant code.
         </motion.h1>
       </LampContainer>
-    </>
+    </motion.section>
   );
 };
 

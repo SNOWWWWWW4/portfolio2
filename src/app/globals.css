@@ -103,6 +103,10 @@
   }
 }
 
+body {
+  background:#090923;
+}
+
 span,
 a {
   display: inline-block;
@@ -165,7 +169,7 @@ p {
 
 /* In case I want to make the Project showcase section different */
 .project-bg-two {
-  background: linear-gradient(#090923,  #3b83f697,#090923 );
+  background: linear-gradient(#090923,  #3b83f697, #090923 );
 }
 
 .git :hover {
