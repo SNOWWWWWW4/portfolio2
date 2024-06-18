@@ -95,7 +95,7 @@ const DesktopNavbar = () => {
   const links: LinkItem[] = [
     { path: '#home', name: 'Home' },
     { path: '#about', name: 'About' },
-    { path: '#services', name: 'Services' },
+    // { path: '#services', name: 'Services' },
     { path: '#projects', name: 'Projects' },
     { path: '#contact', name: 'Contact' },
   ];
@@ -103,7 +103,7 @@ const DesktopNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className='sticky top-0 z-20 flex items-center justify-between p-8'>
+    <nav className='sticky top-0 z-20 flex items-center justify-between p-4 bg-gray-900'>
       <div>
         <span className='self-center whitespace-nowrap text-xl font-semibold text-purple-500 dark:text-white'>
           <p>Web Dev</p>
