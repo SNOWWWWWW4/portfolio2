@@ -157,8 +157,8 @@ const MobileNavbar = () => {
     <>
       <nav className='sticky top-0 z-20 flex items-center justify-between p-4 bg-gray-900'>
         <div>
-          <span className='self-center whitespace-nowrap text-xl font-semibold text-purple-500 dark:text-white'>
-            <p>Web Dev</p>
+          <span className='self-center whitespace-nowrap text-xl font-semibold text-purple-500 '>
+            <a href='https://github.com/SNOWWWWWW4'>Web Dev</a>
           </span>
         </div>
         <div className='z-10'>
